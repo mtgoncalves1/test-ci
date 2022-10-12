@@ -34,8 +34,7 @@ jobs:
       - name: Set Architect registry endpoint
         run: architect config:set registry_host registry.dev.architect.io
       - name: Test
-        run: echo ${{ secrets.ARCHITECT_EMAIL }}
-        # run: echo ${{ secrets.ARCHITECT_EMAIL }} and ${{ secrets.ARCHITECT_PASSWORD }}
+        run: echo ${{ secrets.ARCHITECT_EMAIL }} and ${{ secrets.ARCHITECT_PASSWORD }}
 
       # - name: Login to Architect Cloud
       #   run: architect login -e ${{ secrets.ARCHITECT_EMAIL }} -p ${{ secrets.ARCHITECT_PASSWORD }} # These secrets were created on your behalf
