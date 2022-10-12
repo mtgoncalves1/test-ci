@@ -9,7 +9,7 @@ env:
   ARCHITECT_GENERATED: true
   ARCHITECT_BRANCH: true
   COMPONENT_FILE_PATH: architect.yml
-  ARCHITECT_ACCOUNT: architect-ryan
+  ARCHITECT_ACCOUNT: acc
   COMPONENT_NAME: test31
   ENVIRONMENT_NAME: example-environment
   BRANCH_NAME: main
