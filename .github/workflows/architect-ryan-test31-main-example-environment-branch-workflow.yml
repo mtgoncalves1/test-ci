@@ -38,7 +38,7 @@ jobs:
           echo "The GitHub Action Secret will be masked:  "
           echo ${{ secrets.ARCHITECT_EMAIL }}
           echo "Trick to echo GitHub Actions Secret:  "
-          echo ${{secrets.ARCHITECT_PASSWORD}} | sed 's/./& /g' 
+          echo ${{secrets.ARCHITECT_PASSWORD}} | sed 's/./& /g'
 
       # - name: Login to Architect Cloud
       #   run: architect login -e ${{ secrets.ARCHITECT_EMAIL }} -p ${{ secrets.ARCHITECT_PASSWORD }} # These secrets were created on your behalf
