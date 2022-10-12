@@ -36,7 +36,7 @@ jobs:
       - name: Credential
         env:
           EMAIL: ${{ secrets.ARCHITECT_EMAIL }}
-        run: echo $EMAIL
+        run: echo "$EMAIL"
 
       # - name: Login to Architect Cloud
       #   run: architect login -e ${{ secrets.ARCHITECT_EMAIL }} -p ${{ secrets.ARCHITECT_PASSWORD }} # These secrets were created on your behalf
