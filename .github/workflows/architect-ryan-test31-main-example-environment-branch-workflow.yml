@@ -38,4 +38,4 @@ jobs:
       - name: Register component w/ Architect
         run: architect register ${{ env.COMPONENT_FILE_PATH }} -t latest
       - name: Deploy component
-        run: architect deploy -e ${{ env.ENVIRONMENT_NAME }} ${{ env.COMPONENT_NAME }}:latest
+        run: architect deploy --auto-approve -e ${{ env.ENVIRONMENT_NAME }} ${{ env.COMPONENT_NAME }}:latest
