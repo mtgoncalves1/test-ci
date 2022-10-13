@@ -28,7 +28,7 @@ jobs:
           node-version: '16'
       - uses: crazy-max/ghaction-github-runtime@v2 # Exports internal envs for Github Actions. Required for register caching to work.
       - name: Install Architect CLI
-        run: sudo npm install -g @architect-io/cli
+        run: sudo npm install -g npm i @architect-io/cli@1.27.0-arc-ci-prompt.1
       - name: Set Architect API endpoint
         run: architect config:set api_host https://api.dev.architect.io
       - name: Set Architect registry endpoint
@@ -38,4 +38,4 @@ jobs:
       - name: Register component w/ Architect
         run: architect register ${{ env.COMPONENT_FILE_PATH }} -t latest
       - name: Deploy component
-        run: architect deploy --auto-approve -e ${{ env.ENVIRONMENT_NAME }} ${{ env.COMPONENT_NAME }}:latest
+        run: architect deploy -e ${{ env.ENVIRONMENT_NAME }} ${{ env.COMPONENT_NAME }}:latest
