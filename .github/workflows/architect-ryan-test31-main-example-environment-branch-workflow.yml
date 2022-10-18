@@ -40,4 +40,4 @@ jobs:
       - name: Deploy component
         run: architect deploy --auto-approve -e ${{ env.ENVIRONMENT_NAME }} ${{ env.COMPONENT_NAME }}:latest
       - name: Detroy component without approval
-        run: architect destroy -a acc -e combo
+        run: architect destroy -e ${{ env.ENVIRONMENT_NAME }}
